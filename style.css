@@ -195,6 +195,25 @@ body::before {
 	text-transform: uppercase;
 }
 
+.button--inverted {
+	background: white;
+	color: var(--color-primary-violet);
+}
+
 /* Card-inverted */
 
 /* Active states */
+
+@media (hover: hover) {
+	.button:hover {
+		background: transparent;
+		color: var(--color-primary-violet);
+		border: 1px solid;
+	}
+
+	.button--inverted:hover {
+		color: white;
+	}
+}
+
+/* Media query */
