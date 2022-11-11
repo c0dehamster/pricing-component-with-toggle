@@ -5,21 +5,14 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+
+	/* Temporary */
+	outline: 1px solid gray;
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-	margin: 0;
-}
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
@@ -106,6 +99,14 @@ body::before {
 	position: absolute;
 	inset: 0 0 0 0;
 	z-index: -1;
+}
+
+.wrapper {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 /* Header */
