@@ -115,8 +115,53 @@ body::before {
 /* Header */
 
 .header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 	/* Temporary */
 	outline: 1px solid gray;
+}
+
+.header__title {
+	color: var(--color-dark-grayish-blue);
+	font-size: var(--font-size-600);
+}
+
+.header__pricing-scheme {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+
+	font-size: var(--font-size-400);
+	color: var(--color-grayish-blue);
+}
+
+.header__checkbox {
+	display: none;
+}
+
+.header__switch {
+	position: relative;
+
+	width: 3.5rem;
+	height: 2rem;
+	border-radius: 1rem;
+
+	background: linear-gradient(90deg, var(--color-primary-pale-violet), var(--color-primary-violet));
+}
+
+.header__switch::before {
+	content: "";
+
+	position: absolute;
+	left: 0.25rem;
+	top: 0.25rem;
+	height: 1.5rem;
+	width: 1.5rem;
+
+	border-radius: 0.75rem;
+	background-color: white;
 }
 
 /* Grid of cards */
