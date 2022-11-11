@@ -27,7 +27,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-	min-height: 100vh;
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 }
@@ -104,16 +103,33 @@ body::before {
 }
 
 .wrapper {
-	width: fit-content;
+	width: 100%;
+	max-width: 68.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	padding-inline: 1.5rem;
 }
 
 /* Header */
 
-/* Cards */
+/* Grid of cards */
+
+.grid {
+	width: 100%;
+	display: grid;
+}
+
+.card {
+	margin-block: 1rem;
+	padding: 30px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
 
 /* Card-inverted */
 
