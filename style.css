@@ -195,6 +195,16 @@ body::before {
 	text-transform: uppercase;
 }
 
+.card--inverted {
+	background: linear-gradient(135deg, var(--color-primary-pale-violet), var(--color-primary-violet));
+}
+
+.card--inverted .card__title,
+.card--inverted .card__price,
+.card--inverted .card__list-item {
+	color: white;
+}
+
 .button--inverted {
 	background: white;
 	color: var(--color-primary-violet);
