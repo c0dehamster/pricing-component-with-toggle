@@ -7,9 +7,6 @@
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-
-	/* Temporary */
-	outline: 1px solid gray;
 }
 
 /* Remove default margin */
@@ -93,6 +90,8 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 
+	background-color: var(--color-very-light-grayish-blue);
+
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -115,6 +114,11 @@ body::before {
 
 /* Header */
 
+.header {
+	/* Temporary */
+	outline: 1px solid gray;
+}
+
 /* Grid of cards */
 
 .grid {
@@ -125,16 +129,22 @@ body::before {
 .card {
 	margin-block: 1rem;
 	padding: 30px;
+	padding-block-start: 2rem;
 
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
 	gap: 2rem;
+
+	border-radius: 0.5rem;
+
+	background-color: white;
 }
 
 .card__title {
 	font-size: var(--font-size-500);
 	text-align: center;
+	color: var(--color-grayish-blue);
 }
 
 .card__price {
@@ -142,6 +152,8 @@ body::before {
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+
+	color: var(--color-dark-grayish-blue);
 }
 
 .card__dollar-sign {
@@ -169,11 +181,18 @@ body::before {
 
 	text-align: center;
 	font-size: var(--font-size-400);
+	color: var(--color-grayish-blue);
 }
 
 .button {
 	height: 44px;
 	border: none;
+	border-radius: 0.5rem;
+
+	background: linear-gradient(90deg, var(--color-primary-pale-violet), var(--color-primary-violet));
+	color: var(--color-very-light-grayish-blue);
+
+	text-transform: uppercase;
 }
 
 /* Card-inverted */
