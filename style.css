@@ -134,10 +134,23 @@ body::before {
 
 .card__title {
 	font-size: var(--font-size-500);
+	text-align: center;
 }
 
 .card__price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+}
+
+.card__dollar-sign {
+	font-size: var(--font-size-700);
+}
+
+.card__value {
 	font-size: clamp(var(--font-size-700), 18.67vw, var(--font-size-900));
+	line-height: 1;
 }
 
 .card__details {
