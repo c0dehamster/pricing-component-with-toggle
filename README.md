@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/c0dehamster/pricing-component-with-toggle)
--   Live Site URL: [Add live site URL here](https://c0dehamster.github.io/pricing-component-with-toggle/)
+-   [Solution](https://github.com/c0dehamster/pricing-component-with-toggle)
+-   [Live Site](https://c0dehamster.github.io/pricing-component-with-toggle/)
 
 ## My process
 
