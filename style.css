@@ -115,10 +115,12 @@ body::before {
 /* Header */
 
 .header {
+	height: 16rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1rem;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .header__title {
@@ -168,16 +170,16 @@ body::before {
 	width: 100%;
 	display: grid;
 	align-items: center;
+	gap: 2rem;
 }
 
 .card {
-	margin-block: 1rem;
 	padding: 2rem;
 
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	gap: 2rem;
+	gap: 1.6rem;
 
 	border-radius: 0.5rem;
 
@@ -280,9 +282,17 @@ body::before {
 @media screen and (min-width: 64rem) {
 	.grid {
 		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0;
 	}
 
 	.card--inverted {
 		padding-block: 3.5rem;
+	}
+
+	.header {
+		height: 29.17vh;
+		min-height: fit-content;
+		/* This way, the header stays on the screen without
+		overlapping with other content even at very small screen hights */
 	}
 }
