@@ -135,7 +135,7 @@ body,
 	gap: 1.5rem;
 
 	font-size: var(--font-size-400);
-	color: var(--color-grayish-blue);
+	color: var(--color-light-grayish-blue);
 }
 
 .header__switch {
