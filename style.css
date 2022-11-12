@@ -83,8 +83,6 @@ select {
 }
 
 body {
-	height: 100vh;
-
 	align-items: center;
 	justify-content: flex-start;
 
@@ -96,7 +94,8 @@ body {
 body::before {
 	content: url("./images/bg-top.svg");
 	position: absolute;
-	inset: 0 0 0 0;
+	top: -5%;
+	right: -50%;
 	z-index: -1;
 }
 
@@ -293,5 +292,21 @@ body,
 		min-height: fit-content;
 		/* This way, the header stays on the screen without
 		overlapping with other content even at very small screen hights */
+	}
+
+	body::before {
+		content: url("./images/bg-top.svg");
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	body::after {
+		content: url("./images/bg-bottom.svg");
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
 	}
 }
