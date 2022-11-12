@@ -295,6 +295,10 @@ body,
 		overlapping with other content even at very small screen hights */
 	}
 
+	.header__switch:hover {
+		opacity: 60%;
+	}
+
 	body::before {
 		content: url("./images/bg-top.svg");
 		position: absolute;
