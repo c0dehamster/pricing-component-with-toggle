@@ -132,6 +132,7 @@ body,
 
 .header__pricing-scheme {
 	display: flex;
+	align-items: center;
 	gap: 1.5rem;
 
 	font-size: var(--font-size-400);
