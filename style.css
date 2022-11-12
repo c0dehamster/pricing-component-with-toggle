@@ -119,8 +119,6 @@ body::before {
 	flex-direction: column;
 	align-items: center;
 	gap: 1rem;
-	/* Temporary */
-	outline: 1px solid gray;
 }
 
 .header__title {
@@ -169,12 +167,12 @@ body::before {
 .grid {
 	width: 100%;
 	display: grid;
+	align-items: center;
 }
 
 .card {
 	margin-block: 1rem;
-	padding: 30px;
-	padding-block-start: 2rem;
+	padding: 2rem;
 
 	display: flex;
 	flex-direction: column;
@@ -199,7 +197,6 @@ body::before {
 	gap: 4px;
 
 	color: var(--color-dark-grayish-blue);
-	/* The large font size is set to be max at the container width of at least 267px which corresponds to the viewport width of 375px and above */
 	font-size: clamp(var(--font-size-700), 26.21%, var(--font-size-900));
 }
 
@@ -279,3 +276,13 @@ body::before {
 }
 
 /* Media query */
+
+@media screen and (min-width: 60rem) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.card--inverted {
+		padding-block: 3.5rem;
+	}
+}
